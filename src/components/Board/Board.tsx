@@ -1,8 +1,9 @@
 import { boardFields } from '../../data/boardData';
 import { BoardContainer } from './Board.styles';
 import { Tile } from '../Tile/Tile';
+import { BoardProps } from '../../types/componentProps';
 
-export const Board = ({ state, send }: any) => {
+export const Board = ({ state, send }: BoardProps) => {
   return (
     <BoardContainer>
       {boardFields.map((index) => {

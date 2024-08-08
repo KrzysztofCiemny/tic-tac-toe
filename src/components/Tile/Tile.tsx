@@ -1,10 +1,5 @@
 import { TileContainer } from './Tile.styles';
-
-type TileProps = {
-  index: number;
-  onClick: () => void;
-  player: 'x' | 'o' | null;
-};
+import { TileProps } from '../../types/componentProps';
 
 export const Tile = ({ index, onClick, player }: TileProps) => {
   return (

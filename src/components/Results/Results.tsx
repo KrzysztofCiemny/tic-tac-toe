@@ -1,6 +1,7 @@
 import { ResultsContainer } from './Results.styles';
+import { ResultsProps } from '../../types/componentProps';
 
-export const Results = ({ state }: any) => {
+export const Results = ({ state }: ResultsProps) => {
   return (
     <ResultsContainer>
       Results:

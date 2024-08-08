@@ -11,7 +11,7 @@ function App() {
     <Main>
       <Title>Tic-Tac-Toe</Title>
       <Board state={state} send={send} />
-      <Results state={state} send={send} />
+      <Results state={state} />
       <Button send={send}>Reset Board</Button>
     </Main>
   );

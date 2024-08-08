@@ -1,9 +1,5 @@
 import { ButtonStyled } from './Button.styles';
-
-type ButtonProps = {
-  children: React.ReactNode;
-  send: any;
-};
+import { ButtonProps } from '../../types/componentProps';
 
 export const Button = ({ children, send }: ButtonProps) => {
   return (
