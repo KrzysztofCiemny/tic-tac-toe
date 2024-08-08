@@ -11,4 +11,7 @@ export const TileContainer = styled.div`
   &:hover {
     background-color: aliceblue;
   }
+  &:before {
+    content: attr(data-player);
+  }
 `;
