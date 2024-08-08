@@ -1,5 +1,5 @@
-import { createMachine, assign } from 'xstate';
-import { ContextType, EventsType, playEventSchema } from '../types/machine';
+import { createMachine, assign, AnyEventObject } from 'xstate';
+import { ContextType, playEventSchema } from '../types/machine';
 import { winningCombinations } from '../data/machineData';
 
 const context: ContextType = {
@@ -13,8 +13,8 @@ export const ticTacToeMachine = createMachine(
   {
     initial: 'playing',
     types: {} as {
-      context: typeof context;
-      events: EventsType;
+      context: ContextType;
+      events: AnyEventObject;
     },
     context,
     states: {
